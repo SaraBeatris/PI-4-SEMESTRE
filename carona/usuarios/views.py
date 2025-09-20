@@ -58,3 +58,9 @@ def logout_view(request):
     logout(request)  # encerra sessão do usuário
     messages.success(request, 'Logout realizado com sucesso!')
     return redirect('login')
+    
+def pagina_inicial(request):
+    return render(request, 'paginainicial.html')
+
+def cadastra_usuario(request):
+    return render(request, 'cadastraUsuario.html')
